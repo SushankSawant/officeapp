@@ -74,7 +74,7 @@ const Table = () => {
     ],
   };
 
-  let inputStr = "hello one two three two two one";
+  let inputStr = "hello one two three two two one sushank";
 
   function wordCount(inp) {
     let wordArr = inp.split(" ");
