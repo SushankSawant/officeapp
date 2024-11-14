@@ -117,7 +117,7 @@ nav {
   position: fixed;
   cursor: pointer;
   right: 50px;
-  top: 100px;
+  top: 1.1vw;
   z-index: 201;
   p {
     background-color: var(--whitebackfont);
@@ -871,6 +871,7 @@ footer {
   /* position: relative; */
   background-color: var(--whiteback);
   padding-top: 20px;
+  /* height: ; */
   .leftSection {
     width: 50%;
   }
@@ -1012,6 +1013,7 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+
   label {
     color: var(--darkbluefont);
     font-size: clamp(10px, 1.5vw, 60px);
@@ -1061,6 +1063,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     padding: 20px;
+    /* height: ; */
     width: 100%;
     /* background-color: #f5f5f5; */
   }
@@ -1166,10 +1169,12 @@ footer {
 
 @media (max-width: 850px) {
   .task2 {
-    /* flex-direction: column; */
+    flex-direction: column;
+    /* height: 100vh; */
+    align-items: center;
     .cardDisplay {
-      width: 60%;
-      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .leftSection {
       width: 50%;
@@ -1246,7 +1251,7 @@ footer {
   display: flex;
   position: relative;
   justify-content: space-around;
-  padding: 10px;
+  padding-top: 30px;
   /* transition: 1s all ease; */
   .progressbar {
     background-color: #989898;
@@ -1256,9 +1261,11 @@ footer {
     top: 50%;
   }
   .step {
+    /* transition: 1s all ease; */
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
     h2 {
       background-color: #515151;
       display: flex;
@@ -1266,17 +1273,20 @@ footer {
       justify-content: center;
       color: #fff;
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       padding: 15px;
     }
     p {
       color: var(--whitebackfont);
     }
     .active {
+      box-shadow: 0px 0px 10px #004e8e;
       background-color: #0864b1;
+      /* border: ; */
     }
     h2.completed {
+      box-shadow: 0px 0px 10px #00d400;
       background-color: #00d400;
     }
     img {
@@ -1286,8 +1296,8 @@ footer {
       justify-content: center;
       color: white;
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       padding: 15px;
     }
   }

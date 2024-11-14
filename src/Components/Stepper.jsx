@@ -35,13 +35,13 @@ const Stepper = () => {
 
   const StepperDetails = [
     {
-      title: "First",
+      title: "Personal Info",
     },
     {
-      title: "Second",
+      title: "Address",
     },
     {
-      title: "Third",
+      title: "Card Details",
     },
   ];
 

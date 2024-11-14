@@ -6,6 +6,12 @@ const Table = () => {
     label: ["name", "address", "phone", "image"],
     data: [
       {
+        name: "Sushank",
+        address: "Mumbai",
+        phone: "+91 1234567890",
+        image: "https://loremflickr.com/200/200?random=10",
+      },
+      {
         name: "Domingo",
         address: "The Villages",
         phone: "+91 (613) 253-6009",
@@ -65,12 +71,6 @@ const Table = () => {
         phone: "+91 (839) 071-6733",
         image: "https://loremflickr.com/200/200?random=9",
       },
-      {
-        name: "Sushank",
-        address: "Lalbaug",
-        phone: "+91 2222222222",
-        image: "https://loremflickr.com/200/200?random=10",
-      },
     ],
   };
 
@@ -89,16 +89,28 @@ const Table = () => {
  */
   // const [currInp, setCurrInput] = useState(null);
 
-  let num = 8;
+  let num = 55;
   function inputCheck(num) {
-    let gridMulti = 1;
+    let gridProd = 2;
     let grid = 1;
+    let i = 1;
 
-    for (let i = 1; gridMulti < num; i++) {
-      gridMulti = i * i;
+    /* let i = 1;
+    while (gridProd < num) {
+      i++;
+      gridProd = i * i;
       grid = i;
+      console.log(gridProd, grid, i);
     }
-    return `[${grid}, ${grid}]`;
+
+    return `[${grid}, ${grid}]`; */
+
+    /*   for (let i = 1; gridProd < num; i++) {
+      gridProd = i * i;
+      grid = i;
+      console.log(gridProd, grid, i);
+    }
+    return `[${grid}, ${grid}]`; */
   }
   let result = inputCheck(num);
 
@@ -138,7 +150,7 @@ const Table = () => {
             {tableData.data.map((el, i, arr) => {
               return (
                 <tr className="eleDATA">
-                  <td>{arr.length - i}</td>
+                  <td>{i + 1 /* arr.length - i */}</td>
                   {tableData.label.map((tdEl, tdI) => {
                     return (
                       <td>
