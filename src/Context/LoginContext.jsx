@@ -8,7 +8,13 @@ export const LoginProvider = ({ children }) => {
   const [password, setPassword] = useState("");
 
   // const navigate = useNavigate();
+  const Login = () => {
+    setIsLoggedIn(true);
+  };
 
+  const Logout = () => {
+    setIsLoggedIn(true);
+  };
   return (
     <LoginContext.Provider
       value={{
@@ -18,6 +24,8 @@ export const LoginProvider = ({ children }) => {
         password,
         setPassword,
         setUserName,
+        Login,
+        Logout,
       }}
     >
       {children}

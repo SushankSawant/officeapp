@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 
 const Table = () => {
@@ -74,22 +74,55 @@ const Table = () => {
     ],
   };
 
-  let inputStr = "hello one two three two two one sushank";
+  /* let inputStr = "sushank susHank SuShanK one two two three";
 
   function wordCount(inp) {
-    let wordArr = inp.split(" ");
+    let wordArr = inp.toLowerCase().split(" ");
     let obj = {};
     for (let word of wordArr) {
       obj[word] = obj[word] ? obj[word] + 1 : 1;
     }
     let newObj = Object.entries(obj).sort(([, a], [, b]) => b - a);
-    console.log(newObj, obj);
+    return newObj;
   }
-  wordCount(inputStr);
+  let result = wordCount(inputStr);
+ */
+  // const [currInp, setCurrInput] = useState(null);
+
+  let num = 8;
+  function inputCheck(num) {
+    let gridMulti = 1;
+    let grid = 1;
+
+    for (let i = 1; gridMulti < num; i++) {
+      gridMulti = i * i;
+      grid = i;
+    }
+    return `[${grid}, ${grid}]`;
+  }
+  let result = inputCheck(num);
 
   return (
     <div>
       <Navbar />
+      <div className="displayResult">
+        <h1>{result}</h1>
+        {/* <input
+          type="text"
+          value={currInp}
+          onChange={(e) => setCurrInput(e.target.value)}
+        /> */}
+        {/* <h1></h1> */}
+        {/* <ul>
+          {result.map((e, i) => {
+            return (
+              <li>
+                {e[0]} = {e[1]}
+              </li>
+            );
+          })}
+        </ul> */}
+      </div>
       <div className="tableDisplay">
         <table>
           <thead>
@@ -135,6 +168,7 @@ const Table = () => {
           </tbody>
         </table>
       </div>
+      <hr />
     </div>
   );
 };

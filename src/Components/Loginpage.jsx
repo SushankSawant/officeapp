@@ -12,8 +12,9 @@ function Loginpage() {
     setPassword,
     username,
     setUserName,
-
     password,
+    Login,
+    Logout,
   } = useLoginContext();
   console.log(isLoggedIn, "LOGIN");
   /*  const [userDetail, setUserDetail] = useState({
@@ -61,7 +62,7 @@ function Loginpage() {
  */
   return (
     <div className="loginpage">
-      <form action="" className="loginbox" onSubmit={handleLogin}>
+      <form action="" className="loginbox" onSubmit={Login}>
         <InputComponent
           name={"username"}
           text={username}

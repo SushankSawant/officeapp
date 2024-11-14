@@ -238,7 +238,7 @@ function Formpage() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <div className="task2">
         {console.log(card, "======================")}
         <div className="leftSection">
