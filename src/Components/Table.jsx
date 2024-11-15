@@ -118,15 +118,15 @@ const Table = () => {
   return (
     <div>
       <Navbar />
-      <div className="displayResult">
-        <h1>{result}</h1>
-        {/* <input
+      {/* <div className="displayResult"> */}
+      {/* <h1>{result}</h1> */}
+      {/* <input
           type="text"
           value={currInp}
           onChange={(e) => setCurrInput(e.target.value)}
         /> */}
-        {/* <h1></h1> */}
-        {/* <ul>
+      {/* <h1></h1> */}
+      {/* <ul>
           {result.map((e, i) => {
             return (
               <li>
@@ -135,7 +135,7 @@ const Table = () => {
             );
           })}
         </ul> */}
-      </div>
+      {/* </div> */}
       <Imageslidder />
       <div className="tableDisplay">
         {/* <h1>TABLE (1555123)</h1> */}

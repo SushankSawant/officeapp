@@ -16,7 +16,7 @@ function Popup({ close, title, show }) {
         document.body.style.overflow = "auto";
       }
     };
-  });
+  }, []);
   return (
     <div className="popBack">
       <div className="popup">

@@ -24,7 +24,7 @@ const Imageslidder = () => {
       autoPlay &&
       setTimeout(() => {
         nextSlide();
-      }, 2500);
+      }, 2000);
     console.log(currSlide);
   });
 
