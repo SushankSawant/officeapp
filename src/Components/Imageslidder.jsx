@@ -10,6 +10,9 @@ const Imageslidder = () => {
     "https://picsum.photos/seed/img6/500/300",
     "https://picsum.photos/seed/img7/500/300",
     "https://picsum.photos/seed/img8/500/300",
+    "https://picsum.photos/seed/img9/500/300",
+    "https://picsum.photos/seed/img10/500/300",
+    "https://picsum.photos/seed/img11/500/300",
   ];
   const [currSlide, setCurrSlide] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
@@ -53,7 +56,6 @@ const Imageslidder = () => {
               src={e}
               alt=""
               className={currSlide === i ? "slide" : "slide-hidden"}
-              srcset=""
             />
           );
         })}
