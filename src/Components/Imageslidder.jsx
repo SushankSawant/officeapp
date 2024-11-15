@@ -39,7 +39,7 @@ const Imageslidder = () => {
 
   return (
     <div className="slidderWrapper">
-      <h1>slider</h1>
+      {/* <h1>slider</h1> */}
       <div
         className="slidder"
         onMouseEnter={() => {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import Imageslidder from "./Imageslidder";
 
 const Table = () => {
   let tableData = {
@@ -135,8 +136,9 @@ const Table = () => {
           })}
         </ul> */}
       </div>
+      <Imageslidder />
       <div className="tableDisplay">
-        <h1>TABLE (1555123)</h1>
+        {/* <h1>TABLE (1555123)</h1> */}
         <table>
           <thead>
             <tr>

@@ -1433,3 +1433,74 @@ footer {
   }
 }
 /* TABLE */
+
+/* SLIDER */
+.slidderWrapper {
+  background-color: var(--greyback);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.slidder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border-radius: 20px;
+  height: 500px;
+}
+.slide {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  &&:hover {
+    box-shadow: 0px 0px 30px #004e8e;
+  }
+}
+.slide-hidden {
+  display: none;
+}
+
+.slideCtrl {
+  display: flex;
+  /* background-color: #004e8e; */
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.leftArrow,
+.rightArrow {
+  /* background-color: ; */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rightArrow {
+  transform: rotate(180deg);
+}
+
+.indicators {
+  display: flex;
+  gap: 5px;
+}
+.indicator {
+  width: 20px;
+  height: 20px;
+  background-color: #0081ea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: #ffffff9f;
+  &&:hover {
+    background-color: #0081ea5f;
+  }
+}
+/* SLIDER */
