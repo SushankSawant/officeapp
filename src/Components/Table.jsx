@@ -136,7 +136,7 @@ const Table = () => {
         </ul> */}
       </div>
       <div className="tableDisplay">
-        <h1>TABLE 123</h1>
+        <h1>TABLE (1555123)</h1>
         <table>
           <thead>
             <tr>

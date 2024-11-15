@@ -1,0 +1,12 @@
+[1mdiff --git a/src/Components/Table.jsx b/src/Components/Table.jsx[m
+[1mindex bf44858..b6e29db 100644[m
+[1m--- a/src/Components/Table.jsx[m
+[1m+++ b/src/Components/Table.jsx[m
+[36m@@ -136,7 +136,6 @@[m [mconst Table = () => {[m
+         </ul> */}[m
+       </div>[m
+       <div className="tableDisplay">[m
+[31m-        <h1>TABLE 123</h1>[m
+         <table>[m
+           <thead>[m
+             <tr>[m
