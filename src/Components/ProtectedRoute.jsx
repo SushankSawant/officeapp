@@ -16,14 +16,19 @@ function ProtectedRoute({ children }) {
 
   //   // setIsLoggedIn(currLogin);
   //   // setUserName(currUsername);
-  //   console.log(isLoggedIn, "CURRLOGIN PROTECTED ON MOUNT");
   //   if (isLoggedIn) {
   //     navigate("/");
   //   }
   // }, []);
 
+  useEffect(() => {
+    const currLogin = localStorage.getItem("login");
+    console.log(currLogin, isLoggedIn, "CURRLOGIN PROTECTED ON MOUNT");
+  }, []);
+  // console.log
   // console.log(isLoggedIn, "FROM PROTECTED");
   if (isLoggedIn) {
+    console.log(isLoggedIn, "protected Route logined");
     return children;
   }
   return <Navigate to="/Loginpage" replace />;

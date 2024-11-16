@@ -13,10 +13,10 @@ function Loginpage() {
     username,
     setUserName,
     password,
-    Login,
-    Logout,
+    // Login,
+    // Logout,
   } = useLoginContext();
-  console.log(isLoggedIn, "LOGIN");
+  // console.log(isLoggedIn, "LOGIN");
   /*  const [userDetail, setUserDetail] = useState({
     username: "",
     password: "",
@@ -42,6 +42,7 @@ function Loginpage() {
       setUserName(username);
       localStorage.setItem("login", true);
       localStorage.setItem("username", username);
+      console.log(isLoggedIn, "@ LOGIN PAGE");
       navigate("/");
     }
   }
@@ -62,7 +63,7 @@ function Loginpage() {
  */
   return (
     <div className="loginpage">
-      <form action="" className="loginbox" onSubmit={Login}>
+      <form action="" className="loginbox" onSubmit={handleLogin}>
         <InputComponent
           name={"username"}
           text={username}

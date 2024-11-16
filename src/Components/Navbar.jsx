@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { createBrowserRouter } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { useLoginContext } from "../Context/LoginContext";
+import { Navigate } from "react-router-dom";
 
 function Navbar() {
   /*  const [userName, setUserName] = useState("");

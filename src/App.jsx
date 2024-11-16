@@ -41,7 +41,7 @@ function App() {
     console.log(theme, "INITIAL THEME");
 
     //auth
-    if (currLogin) {
+    if (currLogin == "true") {
       setIsLoggedIn(true);
       setUserName(currUsername);
     } else setIsLoggedIn(false);
